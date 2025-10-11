@@ -76,8 +76,8 @@ else:
 # et üritusele sisenemiseks ei ole piisavalt vana.
 # Kasuta if ja else lauseid, et luua see vanusekontrolli programm.
 
-# vanus = int(input("Lisa vanus: "))
-# if vanus>=18:
-#     print("võib üritusele siseneda")
-# else:
-#     print("ei ole piisavalt vana")
+vanus = int(input("Lisa vanus: "))
+if vanus>=18:
+    print("võib üritusele siseneda")
+else:
+    print("ei ole piisavalt vana")
