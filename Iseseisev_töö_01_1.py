@@ -5,9 +5,11 @@
 # 	kuvatakse programmi pealkiri - 1p
 # 	kood kommenteeritud - 1p
 
+print("=== Paaris või Paaritu Kontroll ===")  # programmi pealkiri
+
 try: # laseme kasutajal sisestada int tüüpi numbri ja teeme kontrolli, et see ikka on int tüüpi
     kas_on_paaris = int(input("Palun sisesta nullist erinev täisarvuline number ning programm ütleb, kas see on paarisarv või mitte: "))
-except:
+except: # kui ei ole int tüüpi, anname veateate
     print("See ei ole ju üldsegi mitte number! Proovi uuesti!")   
 else:
     if kas_on_paaris == 0: # teeme kontrolli, et sisestatud number ei oleks 0. kui on 0, anname veateate
