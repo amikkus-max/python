@@ -7,8 +7,8 @@
 
 kurss = 15.6466  # määrame euro ja krooni vahetuskursi
 
-print("=== Eurokalkulaator ===")  # programmi pealkiri
-print("Tere tulemast Eurokalkulaatorisse! Siin saad konvertida EUR->EEK või EEK->EUR") 
+print("=== Eurokalkulaator ===")  # programmi pealkiri . edasi selgitame kasutajale programmi eesmärki
+print("Tere tulemast Eurokalkulaatorisse! Siin saad konvertida EUR -> EEK või EEK -> EUR") 
 print("Programm kasutab vahetuskurssi 1 EUR = 15.6466 EEK") 
 print("Vali, kumba soovid teha:") 
 print("1: EUR -> EEK") 
