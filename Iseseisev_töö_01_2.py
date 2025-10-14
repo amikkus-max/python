@@ -7,12 +7,13 @@
 
 kurss = 15.6466  # määrame euro ja krooni vahetuskursi
 
-print("=== Eurokalkulaator ===")  # programmi pealkiri . edasi selgitame kasutajale programmi eesmärki
-print("Tere tulemast Eurokalkulaatorisse! Siin saad konvertida EUR -> EEK või EEK -> EUR") 
-print("Programm kasutab vahetuskurssi 1 EUR = 15.6466 EEK") 
-print("Vali, kumba soovid teha:") 
-print("1: EUR -> EEK") 
-print("2: EEK -> EUR") 
+# programmi pealkiri . edasi selgitame kasutajale programmi eesmärki
+print("""=== Eurokalkulaator === 
+    Tere tulemast Eurokalkulaatorisse! Siin saad konvertida EUR -> EEK või EEK -> EUR
+    Programm kasutab vahetuskurssi 1 EUR = 15.6466 EEK
+    Vali, kumba soovid teha:
+    1: EUR -> EEK)
+    2: EEK -> EUR""") 
 valik = input("Sisesta 1 või 2: ") # küsime kasutajalt valikut
 if valik != "1" and valik != "2":  # kui kasutaja valik ei ole 1 ega 2, anname veateate
     print("Nii ei saa! Palun vali 1 või 2!")
