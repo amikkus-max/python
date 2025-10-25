@@ -61,7 +61,6 @@ albumid = ['1. ALIKA – "Bridges"','2. Anett x Fredi – "Read Between The Line
 print(20*"-","KÕIK LOOD",20*"-")
 for i in albumid:
     print(i)
-    
 lugu = int(input("Millist lugu: "))
 print(f"Mängin: {albumid[lugu-1]}")
 

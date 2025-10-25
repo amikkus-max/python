@@ -39,5 +39,3 @@ try:
         print(f"Toodet" "{toode}" " hetkel ole")
 except:
     print("Midagi sisestasid valesti")
-
-

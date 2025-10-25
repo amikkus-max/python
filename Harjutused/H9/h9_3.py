@@ -1,3 +1,8 @@
+# Kasuta loendit 60, 5, 4, 42, 99, 67, 47, 22, 34, 8, 85, 50, 94, 39, 54, 83, 27, 40, 17, 75
+
+#     Leia paaris ja paaritud arvud ning lisa oma loendisse
+#     Kuva paaris ja paritute arvude summad
+
 loend = [60, 5, 4, 42, 99, 67, 47, 22, 34, 8, 85, 50, 94, 39, 54, 83, 27, 40, 17, 75]
 paaris_loend = []
 paaritu_loend = []

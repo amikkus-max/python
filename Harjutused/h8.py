@@ -6,13 +6,6 @@
 # Kuva kõik numbrid
 # Lisa võimalus kasutajal otsida nime järgi telefoninumbreid. Lisa teade, kui otsitavat nime ei leitud.
 
-
-
-
-
-
-
-
 telefonid={
     'Mari': '5957503',
     'Toomas': '5719979',
