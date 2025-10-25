@@ -9,4 +9,3 @@ for i in range(1,42):
         print(i, "TIK")
     else:
         print(i, end=" ")
-
