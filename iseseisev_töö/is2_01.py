@@ -10,7 +10,6 @@ import math
 kilpkonna_kiirus = 0
 haar = 300
 tipunurk = 55
-kolmnurkade_arv = 5
 
 alus = math.sqrt(haar**2 + haar**2 - 2 * haar * haar * math.cos(math.radians(tipunurk)))
 tipu_poorde_nurk = 180 - (72 - tipunurk)
