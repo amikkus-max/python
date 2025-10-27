@@ -18,8 +18,6 @@ alus = math.sqrt(haar**2 + haar**2 - 2 * haar * haar * math.cos(math.radians(tip
 tipu_poorde_nurk = 180 - (360 / kolmnurkade_arv - tipunurk)
 aluse_poorde_nurk = 180 - (180 - tipunurk) / 2
 
-print(kolmnurkade_arv)
-
 turtle.speed(kilpkonna_kiirus)
 turtle.showturtle()
 for i in range(kolmnurkade_arv * 2):
