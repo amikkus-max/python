@@ -1,3 +1,7 @@
+# iseseisev töö nr2
+# autor: Andrus Mikkus
+# kuupäev: 27.10.2025
+
 import turtle
 import math
 
