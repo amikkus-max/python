@@ -8,8 +8,8 @@ import math
 # skaleerimiseks muuda haara pikkust ja tipunurga suurust. kilpkonna kiirust saab ka muuta. use common sense
 
 kilpkonna_kiirus = 0
-haar = 350
-tipunurk = 72
+haar = 300
+tipunurk = 55
 
 alus = math.sqrt(haar**2 + haar**2 - 2 * haar * haar * math.cos(math.radians(tipunurk)))
 tipu_poorde_nurk = 180 - (72 - tipunurk)
