@@ -15,22 +15,20 @@ for _ in range(5):  # kordab 5 korda
     if tehe == "+":  # kui tehe on liitmine
         tulemus = arv1 + arv2  # liidab arvud
         vastus = float(input(f"Mis on {arv1} + {arv2}? "))  # küsib kasutajalt vastust
-        correct = correct + 1 if vastus == tulemus else correct  # kontrollib vastust
+        correct += 1 if vastus == tulemus else correct
     elif tehe == "-":  # kui tehe on lahutamine
         tulemus = arv1 - arv2  # lahutab arvud
         vastus = float(input(f"Mis on {arv1} - {arv2}? "))  # küsib kasutajalt vastust
-        correct = correct + 1 if vastus == tulemus else correct  # kontrollib vastust
+        correct += 1 if vastus == tulemus else correct
     elif tehe == "*":  # kui tehe on korrutamine
         tulemus = arv1 * arv2  # korrutab arvud
         vastus = float(input(f"Mis on {arv1} * {arv2}? "))  # küsib kasutajalt vastust
-        correct = correct + 1 if vastus == tulemus else correct  # kontrollib vastust
+        correct += 1 if vastus == tulemus else correct
     elif tehe == "/":  # kui tehe on jagamine
-        while arv2 == 0:  # kontrollib, et jagaja ei oleks null
-            arv2 = random.randint(1, 100)  # genereerib uue jagaja
         tulemus = arv1 / arv2  # jagab arvud
         vastus = float(input(f"Mis on {arv1} / {arv2}? "))  # küsib kasutajalt vastust
-        correct = correct + 1 if vastus == tulemus else correct  # kontrollib vastust
-
+        correct += 1 if vastus == tulemus else correct
+    
     print(f"Õig vastus: {arv1} {tehe} {arv2} = {tulemus}")  # prindib tehted ja tulemuse
     print(f"Sinu vastus: {vastus}")  # prindib kasutaja vastused
 
