@@ -9,7 +9,7 @@
 
 # iseseisev töö nr3
 # autor: Andrus Mikkus
-# kuupäev: 27.10.2025
+# kuupäev: 03.12.2025
 
 import turtle
 import random
