@@ -15,7 +15,6 @@ import turtle
 import random
 import math
 
-# defineerime funktsioonid kujundite joonistamiseks
 def joonista_kolmnurk(suurus):
     for _ in range(3):
         turtle.forward(suurus)
@@ -31,25 +30,22 @@ def joonista_viisnurk(suurus):
 def joonista_ring(suurus):
     turtle.circle(suurus/2)
 
+kujundid = {1: "kolmnurk", 2: "ruut", 3: "viisnurk", 4: "ring", 5: "suvaline"}
 joonista_kujund = {
     1: joonista_kolmnurk,
     2: joonista_ruut,
     3: joonista_viisnurk,
     4: joonista_ring
 }
-
-
-kujundid = {1: "kolmnurk", 2: "ruut", 3: "viisnurk", 4: "ring", 5: "suvaline"}
 suurus = 100
+screen = turtle.Screen()
+screen.setup(width=0.75, height=0.75)
+max_x = (screen.window_width() // 2) - suurus
+max_y = (screen.window_height() // 2) - suurus
 programmil6pp = False
 
-
-# while tsükkel, mis kestab seni, kuni programmil6pp saab True väärtuse.
-# programmil6pp saab terve programmi käivitamise ajal True väärtuse siis, kui kasutaja sisestab tühja väärtuse.
-# Laseb programmil mitu korda jooksutada
 while not programmil6pp:
     
-# while tsükkel kujundi küsimiseks
     while not programmil6pp:
         print("Vali kujundi tüüp:")
         for key, value in kujundid.items():
@@ -63,7 +59,6 @@ while not programmil6pp:
             kujund = int(kujund)
             break
 
-# while tsükkel joonistatavate kujundite arvu küsimiseks
     while not programmil6pp:
         arv = input("Sisesta joonistatavate kujundite arv: ")
         if arv == "":
@@ -74,34 +69,18 @@ while not programmil6pp:
             arv = int(arv)
             break
 
-# if tsükkel, mis joonistab kujundid, kui programmil6pp on False
-    if not programmil6pp:
-        turtle.speed(0)
-        screen = turtle.Screen()
-        screen.setup(width=0.75, height=0.75)
-        for _ in range(arv):
-            turtle.penup()
-            turtle.goto(random.randint(-screen.window_width()//2 + suurus, screen.window_width()//2 - suurus),
-                        random.randint(-screen.window_height()//2 + suurus, screen.window_height()//2 - suurus))
-            turtle.pendown()
-            if kujund == 1:
-                joonista_kolmnurk(suurus)
-            elif kujund == 2:
-                joonista_ruut(suurus)
-            elif kujund == 3:
-                joonista_viisnurk(suurus)
-            elif kujund == 4:
-                joonista_ring(suurus)
-            elif kujund == 5:
-                juhuslik_valik = random.randint(1, 4)
-                if juhuslik_valik == 1:
-                    joonista_kolmnurk(suurus)
-                elif juhuslik_valik == 2:
-                    joonista_ruut(suurus)
-                elif juhuslik_valik == 3:
-                    joonista_viisnurk(suurus)
-                elif juhuslik_valik == 4:
-                    joonista_ring(suurus) 
+    turtle.clear()
 
-# tunnistan ausalt ülesse, kasutasin osade käskude puhul AI abi.
-# kogu andmekogumike teema nõuab ka veel süvenemist ja aru saamist.
+    if not programmil6pp: 
+        screen.tracer(0) 
+        for _ in range(arv):
+            if kujund == 5:
+                kujundi_valik = random.randint(1, 4)
+            else:
+                kujundi_valik = kujund
+            joonista = joonista_kujund[kujundi_valik]
+            turtle.penup()
+            turtle.goto(random.randint(-max_x, max_x), random.randint(-max_y, max_y))
+            turtle.pendown()
+            joonista(suurus)
+        screen.tracer(1)
