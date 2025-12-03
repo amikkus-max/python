@@ -36,8 +36,7 @@ while not endprogram:
     while not endprogram:
         print("Vali kujundi tüüp:")
         for valik, kujundi_valik_dict in joonista_dict.items():
-            kujund = kujundi_valik_dict["name"]
-            print(f"{valik} : {kujund}")
+            print(f"{valik} : {kujundi_valik_dict["name"]}")
         userchoice = input("Sisesta number: ")
         if userchoice == "":
             endprogram = True
