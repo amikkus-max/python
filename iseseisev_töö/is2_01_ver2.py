@@ -11,7 +11,7 @@ import math
 
 kilpkonna_kiirus = 0
 haar = 300
-tipunurk = 25
+tipunurk = 20
 kolmnurkade_arv = 12
 
 alus = math.sqrt(haar**2 + haar**2 - 2 * haar * haar * math.cos(math.radians(tipunurk)))
